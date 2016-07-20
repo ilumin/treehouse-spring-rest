@@ -13,7 +13,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'bookmarks'
+    baseName = 'course-review'
     version =  '0.1.0'
 }
 
