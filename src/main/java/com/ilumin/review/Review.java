@@ -1,22 +1,17 @@
 package com.ilumin.review;
 
+import com.ilumin.core.BaseEntity;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity
-public class Review {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private final Long id;
+public class Review extends BaseEntity {
 
     private int rating;
-    private String desciption;
+    private String description;
 
-    public Review() {
-        id = null;
+    protected Review() {
+        super();
     }
 
     public int getRating() {
@@ -27,11 +22,11 @@ public class Review {
         this.rating = rating;
     }
 
-    public String getDesciption() {
-        return desciption;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesciption(String desciption) {
-        this.desciption = desciption;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
