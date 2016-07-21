@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 @Entity
 public class User extends BaseEntity {
 
-    private static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
+    public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
 
     private String firstName;
     private String lastName;
@@ -65,5 +65,9 @@ public class User extends BaseEntity {
 
     public String getPassword() {
         return password;
+    }
+
+    public String[] getRoles() {
+        return roles;
     }
 }
