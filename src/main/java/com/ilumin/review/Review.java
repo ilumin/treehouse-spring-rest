@@ -19,6 +19,11 @@ public class Review extends BaseEntity {
         super();
     }
 
+    public Review(int rating, String description) {
+        this.rating = rating;
+        this.description = description;
+    }
+
     public int getRating() {
         return rating;
     }
