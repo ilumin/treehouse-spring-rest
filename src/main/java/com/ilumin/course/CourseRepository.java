@@ -1,6 +1,6 @@
 package com.ilumin.course;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface CourseRepository extends CrudRepository<Course, Long> {
+public interface CourseRepository extends PagingAndSortingRepository<Course, Long> {
 }
